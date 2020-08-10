@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: hello-v2
-        image: aa332266/hello:v2
+        image: aa332266/hello:v2-test
 ---
 apiVersion: v1
 kind: Service

@@ -12,7 +12,7 @@ spec:
       paths:
       - path: /
         backend:
-          serviceName: hello-service-v1
+          serviceName: rollout-v1-blue
           servicePort: 80
   - host: hello.test.v2.com
     http:

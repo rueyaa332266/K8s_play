@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: hello-v1
-        image: aa332266/hello:v1
+        image: aa332266/hello:v3
   strategy:
     canary: #Indicates that the rollout should use the Canary strategy
       maxSurge: "25%"

@@ -10,9 +10,10 @@ spec:
       containers:
       - name: echo
         image: busybox
+        envFrom:
+        - configMapRef:
+            name: echo-env
         env:
-        - name: WORD
-          value: "Hello from the environment"
         command: ["sh", "-c"]
         args:
         - |

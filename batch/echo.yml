@@ -10,8 +10,11 @@ spec:
       containers:
       - name: sleep
         image: busybox
+        env:
+        - name: WORD
+          value: "Hello from the environment"
         command: ["sh", "-c"]
         args:
         - |
-          echo worked
+          echo $WORD
       restartPolicy: Never
